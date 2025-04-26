@@ -2,9 +2,9 @@
 //Dictionary.java
 
 // import necessary package
-import java.util.*;
-import java.sql.*;
 import java.io.*;
+import java.sql.*;
+import java.util.*;
 
 // Class representing a word and its meaning
 class WordsListClass {
@@ -56,9 +56,10 @@ public class Dictionary {
     public Dictionary() throws Exception{
         try {
             // Initialize database connection and data structures
+            // String dbUrl = "jdbc:mysql://localhost:3306/dictionary_db";
             String dbUrl = "jdbc:mysql://localhost:3306/dictionary_db";
-            String dbUser = "root";
-            String dbPass = "";
+            String dbUser = "your_user";
+            String dbPass = "you_passowrd";
             connection = DriverManager.getConnection(dbUrl, dbUser, dbPass);
 
             // Initialize data structures
